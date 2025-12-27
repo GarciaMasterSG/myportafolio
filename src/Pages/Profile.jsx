@@ -4,10 +4,14 @@ import githubIcon from '../Images/github-logo.png'
 import locationimage from '../Images/location.png'
 import emailimage from '../Images/mail.png'
 import './Profile.css'
+import background from '../Images/cyber-background.jpg'
 
 function Profile(){
     return(
         <div id="profilepage">
+            <div>
+                <img src={background} alt="" id='backgroundimage' />
+            </div>
             <div id='image'>
                 <img id="myimage" src={myimage} alt="" />
             </div>
