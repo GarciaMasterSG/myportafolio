@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+#background img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home{
+    height: 85vh;
+    overflow-y: scroll;
+    margin-top: 15vh;
+    box-sizing: border-box;
+    padding: 3rem;
+    color: white;
+}
+
+#pageTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-family: 'Google Sans';
+}
+
+#pageTitle h1{
+    font-size: 4rem;
+    margin: 0;
+}
+
+#pageTitle h3{
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+#skills h1{
+    font-family: 'Google Sans';
+    font-size: 2.75rem;
+}
+
+#projects{
+    margin-top: 5rem;
+}
+
+#projectstitle{
+    font-size: 2.75rem;
+    font-family: 'Google Sans';
+}
+
+.skillcards{
+    background-color: #1F1B2E;
+    border: 1px solid rgba(160, 90, 255, 0.3);
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    font-family: 'Google Sans';
+    color: white;
+    user-select: none;
+}
+
+.skillcards:hover{
+    background: linear-gradient(rgba(160, 90, 255, 0.3), rgba(160, 90, 255, 0.3)), url('../Images/coding01.gif');
+}
+
+.skillcards img{
+    height: 3.4rem;
+    width: 3.4rem;
+    flex: 2;
+}
+
+.skillcards h2{
+    flex: 1;
+    margin: 0;
+}
+
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}

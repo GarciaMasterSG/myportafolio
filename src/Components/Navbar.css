@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    color: white;
+    user-select: none;
+    background-color: #1F1B2E;
+    border: 1px solid rgba(160, 90, 255, 0.3);
+    z-index: 1000;
+
+}
+
+#normalmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#menu{
+    display: none;
+}
+
+#Logo{
+    height: 120px;
+    object-fit: contain;
+    padding-left: 7rem
+}
+
+#links {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    padding-right: 5rem;
+
+}
+
+#links .Link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+    height: 95%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Google Sans';
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#links .Link:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#mobilemenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #1F1B2E;
+    top: 0;
+    right: 0;
+    gap: 6rem;
+    height: 100vh;
+    width: 100vw;
+}
+
+#mobilemenu img{
+    height: 4rem;
+    width: 4rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+}
+
+#mobilemenu .Link{
+    font-family: 'Google Sans';
+    font-size: 3.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+
+    nav{
+        justify-content: end;
+    }
+
+    #normalmenu{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+        padding-right: 2.5rem;
+    }
+
+    #menu img{
+        height: 4rem;
+        width: 4rem;
+        cursor: pointer;
+    }
+}

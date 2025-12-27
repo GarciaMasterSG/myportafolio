@@ -1,0 +1,72 @@
+#projectcards{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 35rem;
+    width: 20rem;
+    font-family: 'Google Sans';
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: white;
+    padding: 1rem;
+    user-select: none;
+    background-color: #1F1B2E;
+    border: 1px solid rgba(160, 90, 255, 0.3);
+}
+
+#projectcards:hover{
+    background: #1f1b2e6c
+}
+
+#background1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 34.9rem;
+    width: 19.9rem;
+    border-radius: 10px;
+    background: linear-gradient(rgba(159, 90, 255, 0.475), rgba(160, 90, 255, 0.475)), url('../Images/coding01.gif');
+    background-size: cover;
+    z-index: -1;
+}
+
+#projectcards h1{
+    font-size: 1rem;
+}
+#projectcards h3{
+    font-size: 0.75rem;
+}
+
+#projectcards video{
+    height: 15rem;
+    width: 18rem;
+    align-self: center;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#projectcards a {
+    background-color: #00D977;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
+
+#projectcards a:hover {
+    background-color: #00d977c8;
+}
+
+#projectcards a:active {
+    background-color: #00d97775;
+}
+
+#botones{
+    display: flex;
+    gap: 0.5rem;
+    font-family: 'Google Sans';
+}
+
